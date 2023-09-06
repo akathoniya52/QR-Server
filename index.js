@@ -56,3 +56,7 @@ app.get("/:id", async (req, res) => {
 
   return res.json({ message: `${id1} `, data: data });
 });
+
+app.get("/", (req, res) => {
+  return res.json({ message: "Server works properly" });
+});
