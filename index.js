@@ -41,7 +41,7 @@ app.post("/", async (req, res) => {
     (us.id = req.body.link), (us.linkArr = req.body.linkArr);
     const dc = await us.save();
     console.log(dc);
-    return res.json({ message: "sucees", data: req.body.model });
+    return res.json({ message: "sucees", data: req.body.link });
   } catch (error) {
     console.log(error);
     return res.json({ message: "Something went wrong" });
